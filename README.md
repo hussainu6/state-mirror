@@ -454,5 +454,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: hussainu6@gmail
+- 📧 Email: hussainu6@gmail.com
 - 🐛 Issues: [GitHub Issues](https://github.com/hussainu6/state-mirror/issues)
