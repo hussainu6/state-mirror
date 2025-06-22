@@ -2,7 +2,7 @@
 
 A powerful TypeScript library for real-time, bi-directional synchronization of JavaScript/TypeScript objects across browser tabs, windows, and devices.
 
-[![npm version](https://badge.fury.io/js/state-mirror.svg)](https://badge.fury.io/js/state-mirror)
+[![npm version](https://badge.fury.io/js/state-mirror.svg?icon=si%3Anpm)](https://badge.fury.io/js/state-mirror.svg?icon=si%3Anpm)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## ✨ Features
@@ -456,9 +456,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📧 Email: hussainu6@gmail
 - 🐛 Issues: [GitHub Issues](https://github.com/hussainu6/state-mirror/issues)
-- 📖 Documentation: [docs.statemirror.dev](https://docs.statemirror.dev)
-
-## 📬 Contact & Community
-
-- 📧 Email: hussainu6@gmail
-- 🐛 Issues: [GitHub Issues](https://github.com/hussainu6/state-mirror/issues) 
