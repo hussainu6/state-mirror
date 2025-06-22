@@ -454,7 +454,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@statemirror.dev
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/state-mirror/issues)
+- 📧 Email: hussainu6@gmail
+- 🐛 Issues: [GitHub Issues](https://github.com/hussainu6/state-mirror/issues)
 - 📖 Documentation: [docs.statemirror.dev](https://docs.statemirror.dev)
-- 💬 Discord: [Join our community](https://discord.gg/statemirror) 
+
+## 📬 Contact & Community
+
+- 📧 Email: hussainu6@gmail
+- 🐛 Issues: [GitHub Issues](https://github.com/hussainu6/state-mirror/issues) 
