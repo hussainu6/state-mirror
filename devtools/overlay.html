@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StateMirror DevTools</title>
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div class="state-mirror-devtools">
+        <div class="state-mirror-header">
+            <span class="state-mirror-title">StateMirror DevTools</span>
+            <div class="state-mirror-controls">
+                <button class="state-mirror-toggle" title="Toggle visibility">−</button>
+                <button class="state-mirror-close" title="Close">×</button>
+            </div>
+        </div>
+        <div class="state-mirror-content">
+            <div class="state-mirror-section">
+                <h3>Status</h3>
+                <div class="state-mirror-status">
+                    <div class="status-item">
+                        <span class="label">Connection:</span>
+                        <span class="value connected">Connected</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">Watching:</span>
+                        <span class="value">Active</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">Instance ID:</span>
+                        <span class="value">demo-instance</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="state-mirror-section">
+                <h3>Recent Activity</h3>
+                <div class="state-mirror-activity">
+                    <div class="activity-item">
+                        <span class="label">Last Update:</span>
+                        <span class="value">12:34:56</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="label">Patches Sent:</span>
+                        <span class="value">42</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="label">Patches Received:</span>
+                        <span class="value">38</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="state-mirror-section">
+                <h3>Plugins</h3>
+                <div class="state-mirror-plugins">
+                    <div class="plugin-item">
+                        <span class="label">Active Plugins:</span>
+                        <span class="value">2</span>
+                    </div>
+                    <div class="plugin-item">
+                        <span class="label">Logger:</span>
+                        <span class="value enabled">Enabled</span>
+                    </div>
+                    <div class="plugin-item">
+                        <span class="label">Firebase:</span>
+                        <span class="value disabled">Disabled</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="state-mirror-section">
+                <h3>Queue Status</h3>
+                <div class="state-mirror-queue">
+                    <div class="queue-item">
+                        <span class="label">Pending:</span>
+                        <span class="value">0</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="label">Processing:</span>
+                        <span class="value">0</span>
+                    </div>
+                    <div class="queue-item">
+                        <span class="label">Failed:</span>
+                        <span class="value">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

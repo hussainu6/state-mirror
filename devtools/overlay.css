@@ -1,0 +1,247 @@
+/* StateMirror DevTools Styles */
+.state-mirror-devtools {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  min-width: 300px;
+  max-width: 400px;
+  transition: all 0.2s ease;
+}
+
+.state-mirror-devtools.collapsed {
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.state-mirror-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+}
+
+.state-mirror-title {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 13px;
+}
+
+.state-mirror-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.state-mirror-toggle,
+.state-mirror-close {
+  background: none;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.state-mirror-toggle:hover,
+.state-mirror-close:hover {
+  background: #edf2f7;
+  color: #4a5568;
+}
+
+.state-mirror-content {
+  padding: 12px;
+  color: #2d3748;
+}
+
+.state-mirror-section {
+  margin-bottom: 16px;
+}
+
+.state-mirror-section:last-child {
+  margin-bottom: 0;
+}
+
+.state-mirror-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 4px;
+}
+
+.state-mirror-status,
+.state-mirror-activity,
+.state-mirror-plugins,
+.state-mirror-queue {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.status-item,
+.activity-item,
+.plugin-item,
+.queue-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.label {
+  color: #718096;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.value.connected {
+  color: #48bb78;
+}
+
+.value.disconnected {
+  color: #f56565;
+}
+
+.value.enabled {
+  color: #48bb78;
+}
+
+.value.disabled {
+  color: #a0aec0;
+}
+
+/* Dark theme */
+.state-mirror-devtools.dark {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+.state-mirror-devtools.dark .state-mirror-header {
+  background: #1a202c;
+  border-bottom-color: #4a5568;
+}
+
+.state-mirror-devtools.dark .state-mirror-title {
+  color: #e2e8f0;
+}
+
+.state-mirror-devtools.dark .state-mirror-toggle,
+.state-mirror-devtools.dark .state-mirror-close {
+  color: #a0aec0;
+}
+
+.state-mirror-devtools.dark .state-mirror-toggle:hover,
+.state-mirror-devtools.dark .state-mirror-close:hover {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.state-mirror-devtools.dark .state-mirror-content {
+  color: #e2e8f0;
+}
+
+.state-mirror-devtools.dark .state-mirror-section h3 {
+  color: #e2e8f0;
+  border-bottom-color: #4a5568;
+}
+
+.state-mirror-devtools.dark .label {
+  color: #a0aec0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .state-mirror-devtools {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.state-mirror-devtools {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-indicator.connected {
+  background: #48bb78;
+  box-shadow: 0 0 0 2px rgba(72, 187, 120, 0.2);
+}
+
+.status-indicator.disconnected {
+  background: #f56565;
+  box-shadow: 0 0 0 2px rgba(245, 101, 101, 0.2);
+}
+
+/* Tooltip */
+.state-mirror-devtools [title] {
+  position: relative;
+}
+
+.state-mirror-devtools [title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  z-index: 10000;
+  margin-bottom: 4px;
+}
+
+.state-mirror-devtools [title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #2d3748;
+  margin-bottom: -4px;
+} 
